@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Water and Wind</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  </head>
+  <body>
+    <div class="bg-primary text-white text-center">
+      <h1 class="p-2 fs-2">Water and Wind status</h1>
+    </div>
+    <div class="container">
+      <div class="row justify-content-center mt-5">
+        <div class="col-4">
+          <div class="card">
+            <div class="card-header bg-primary text-white fs-5">Water</div>
+            <div class="card-body">
+              <h5 class="card-title">{{ .Water }}</h5>
+              <p class="card-text">{{ .WaterStatus }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card">
+            <div class="card-header bg-primary text-white fs-5">Wind</div>
+            <div class="card-body">
+              <h5 class="card-title">{{ .Wind }}</h5>
+              <p class="card-text">{{ .WindStatus }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center mt-5">
+        <div class="col-8">
+          <p class="ms-2">
+            By: <br />
+            Muhammad Agi Sahriza Daan Nur (149368582101-159)
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script>
+      setTimeout(function () {
+        location.reload();
+      }, 3000);
+    </script>
+  </body>
+</html>
